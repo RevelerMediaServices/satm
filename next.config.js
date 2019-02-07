@@ -3,13 +3,16 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const debug = process.env.NODE_ENV !== "production";
-const withImages = require("next-images");
+const optimizedImages = require("next-optimized-images");
 
-module.exports = withImages({
+module.exports = optimizedImages({
+  optimizeImagesInDev: true,
   exportPathMap: function() {
     return {
       "/": { page: "/" },
-      "/about": { page: "/about" }
+      "/about": { page: "/about" },
+      "/calendar": { page: "/calendar" },
+      contact: { page: "/contact" }
     };
   },
   assetPrefix: !debug ? "/satm/" : ""

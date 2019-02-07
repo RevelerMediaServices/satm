@@ -6,7 +6,7 @@ import img from "../static/images/loveStartsHere.jpg";
 
 import NextSeo from "next-seo";
 
-const AboutDiv = styled.div`
+const ContactDiv = styled.div`
   height: 85vh;
 
   background-image: url(${img});
@@ -14,13 +14,13 @@ const AboutDiv = styled.div`
   background-repeat: no-repeat;
 
   h1 {
-    color: red;
+    color: white;
   }
 `;
 
-const About = () => (
+const Contact = () => (
   <Layout>
-    <AboutDiv>
+    <ContactDiv>
       <NextSeo
         config={{
           title: "Santa & the Mrs of West Texas",
@@ -32,8 +32,8 @@ const About = () => (
         <br /> w/Server Side Rendering
       </h1>
       <p>Reveler Media Services Base SEO Template</p>
-    </AboutDiv>
+    </ContactDiv>
   </Layout>
 );
 
-export default About;
+export default Contact;

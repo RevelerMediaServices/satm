@@ -42,9 +42,11 @@ const NavBarDiv = styled.div`
   }
 
   .navbarBrandLogo {
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
     img {
       width: 5vw;
-      margin-left: 5vw;
     }
   }
 `;
@@ -68,7 +70,7 @@ export default class Navbar1 extends Component {
   render() {
     return (
       <NavBarDiv>
-        <Navbar color="faded" light expand="lg">
+        <Navbar color="warning" light expand="lg">
           <NavbarBrand
             href="/"
             as={process.env.BACKEND_URL + "/"}
@@ -90,6 +92,19 @@ export default class Navbar1 extends Component {
               <NavItem>
                 <Link href="/about" as={process.env.BACKEND_URL + "/about"}>
                   <a className="nav-link">About</a>
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link
+                  href="/calendar"
+                  as={process.env.BACKEND_URL + "/calendar"}
+                >
+                  <a className="nav-link">Calendar</a>
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link href="/contact" as={process.env.BACKEND_URL + "/contact"}>
+                  <a className="nav-link">Contact</a>
                 </Link>
               </NavItem>
             </Nav>
