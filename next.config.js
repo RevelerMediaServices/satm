@@ -3,8 +3,9 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const debug = process.env.NODE_ENV !== "production";
+const withImages = require("next-images");
 
-module.exports = {
+module.exports = withImages({
   exportPathMap: function() {
     return {
       "/": { page: "/" },
@@ -12,4 +13,4 @@ module.exports = {
     };
   },
   assetPrefix: !debug ? "/satm/" : ""
-};
+});

@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 import { Button } from "reactstrap";
 
+import img from "../static/enterprise.jpg";
+
 const IndexDiv = styled.div`
   a {
     color: green;
@@ -17,5 +19,7 @@ export default () => (
       <a>About</a>
     </Link>
     <Button>Test</Button>
+    <br />
+    <img src={img} alt="" />
   </IndexDiv>
 );
