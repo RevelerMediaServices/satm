@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\about.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -27595,9 +27595,9 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
+/***/ "./pages/about.js":
 /*!************************!*\
-  !*** ./pages/index.js ***!
+  !*** ./pages/about.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -27607,54 +27607,39 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/images/loveStartsHere.jpg */ "./static/images/loveStartsHere.jpg");
-/* harmony import */ var _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\pages\\about.js";
 
 
 
-
-var IndexDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__IndexDiv",
-  componentId: "v3thzb-0"
-})(["height:85vh;background-image:url(", ");background-size:100%;background-repeat:no-repeat;"], _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3___default.a);
-
-var Index = function Index(props) {
+var About = function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 4
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IndexDiv, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 5
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 6
     },
     __self: this
-  }, "RMS Static Website Template", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+  }, "About Reveler Media Services"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 7
     },
     __self: this
-  }), " w/Server Side Rendering"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "Reveler Media Services Base SEO Template")));
+  }, "Reveler Media Service")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (About);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -27671,7 +27656,7 @@ var Index = function Index(props) {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -27688,26 +27673,15 @@ module.exports = "/_next/static/images/logo-4b350ae4a6299b6b2226719c887a350b.png
 
 /***/ }),
 
-/***/ "./static/images/loveStartsHere.jpg":
-/*!******************************************!*\
-  !*** ./static/images/loveStartsHere.jpg ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/loveStartsHere-1912a0046eda03378ebe064224d1aea8.jpg";
-
-/***/ }),
-
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
-  !*** multi ./pages/index.js ***!
+  !*** multi ./pages/about.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/', function() {
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+__NEXT_REGISTER_PAGE('/about', function() {
+module.exports = __webpack_require__(/*! ./pages/about.js */"./pages/about.js");
 
 return { page: module.exports.default }});
 
@@ -27724,5 +27698,5 @@ module.exports = dll_ea92b26618a5e8aa3a89;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[4,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=about.js.map

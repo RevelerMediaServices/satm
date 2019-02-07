@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { Button } from "reactstrap";
 
-import img from "../static/enterprise.jpg";
+import img from "../static/images/enterprise.jpg";
 
 const IndexDiv = styled.div`
   a {
