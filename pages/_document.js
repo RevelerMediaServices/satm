@@ -23,13 +23,6 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Santa & the Mrs of West Texas</title>
-          <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossOrigin="anonymous"
-          />
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>

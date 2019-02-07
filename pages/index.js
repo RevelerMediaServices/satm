@@ -1,25 +1,27 @@
-import Link from "next/link";
+import Layout from "../components/Layout";
 
 import styled from "styled-components";
 
-import { Button } from "reactstrap";
-
-import img from "../static/images/enterprise.jpg";
+import img from "../static/images/loveStartsHere.jpg";
 
 const IndexDiv = styled.div`
-  a {
-    color: green;
-  }
+  height: 85vh;
+
+  background-image: url(${img});
+  background-size: 100%;
+  background-repeat: no-repeat;
 `;
 
-export default () => (
-  <IndexDiv>
-    Hello World.{" "}
-    <Link href="/about" as={process.env.BACKEND_URL + "/about"}>
-      <a>About</a>
-    </Link>
-    <Button>Test</Button>
-    <br />
-    <img src={img} alt="" />
-  </IndexDiv>
+const Index = props => (
+  <Layout>
+    <IndexDiv>
+      <h1>
+        RMS Static Website Template
+        <br /> w/Server Side Rendering
+      </h1>
+      <p>Reveler Media Services Base SEO Template</p>
+    </IndexDiv>
+  </Layout>
 );
+
+export default Index;

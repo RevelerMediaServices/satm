@@ -1,12 +1,12 @@
-import Link from 'next/link'
-export default () => (
-  <div>
-    <div>About us</div>
+import Layout from "../components/Layout";
+
+const About = () => (
+  <Layout>
     <div>
-      Back to{' '}
-      <Link href='/' as={process.env.BACKEND_URL + '/'}>
-        <a>Home</a>
-      </Link>
+      <h1>About Reveler Media Services</h1>
+      <p>Reveler Media Service</p>
     </div>
-  </div>
-)
+  </Layout>
+);
+
+export default About;

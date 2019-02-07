@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "./Navbar1";
 
-import metaImage from "../static/graphics/logo.png";
+import metaImage from "../static/images/logo.png";
 
 import styled from "styled-components";
 

@@ -12,7 +12,7 @@ import {
 
 import styled from "styled-components";
 
-import navbarBrandLogo from "../static/graphics/logo.png";
+import navbarBrandLogo from "../static/images/logo.png";
 
 const NavBarDiv = styled.div`
   .navbar-nav {
@@ -79,12 +79,12 @@ export default class Navbar1 extends Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <Link href="/">
+                <Link href="/" as={process.env.BACKEND_URL + "/"}>
                   <a className="nav-link">Home</a>
                 </Link>
               </NavItem>
               <NavItem>
-                <Link href="/about">
+                <Link href="/about" as={process.env.BACKEND_URL + "/about"}>
                   <a className="nav-link">About</a>
                 </Link>
               </NavItem>
