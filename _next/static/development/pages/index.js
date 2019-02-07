@@ -14,19 +14,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Navbar1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar1 */ "./components/Navbar1.js");
-/* harmony import */ var next_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-seo */ "./node_modules/next-seo/dist/index.js");
-/* harmony import */ var next_seo__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_seo__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _static_images_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/images/logo.png */ "./static/images/logo.png");
-/* harmony import */ var _static_images_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_images_logo_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _static_images_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/images/logo.png */ "./static/images/logo.png");
+/* harmony import */ var _static_images_logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_images_logo_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\components\\Layout.js";
 
 
 
 
 
-
-var LayoutDiv = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+var LayoutDiv = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "Layout__LayoutDiv",
   componentId: "sc-1s258ep-0"
 })([""]);
@@ -35,13 +32,13 @@ var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LayoutDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -49,7 +46,7 @@ var Layout = function Layout(props) {
     content: "Santa & the Mrs of West Texas",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 13
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -57,7 +54,7 @@ var Layout = function Layout(props) {
     content: "website",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -65,15 +62,15 @@ var Layout = function Layout(props) {
     content: "Generate a Canonical Pague URL",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 15
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     property: "og:image",
-    content: _static_images_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    content: _static_images_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 16
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -83,20 +80,20 @@ var Layout = function Layout(props) {
     crossOrigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 17
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar1__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 25
     },
     __self: this
   }, props.children));
@@ -153,7 +150,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 var NavBarDiv = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "Navbar1__NavBarDiv",
   componentId: "sc-1gjvm54-0"
-})([".navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:block;float:none;}@media (min-width:768px){.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:inline-block;float:none;}}.navbarBrandLogo{img{width:5vw;margin-left:5vw;}}"]);
+})([".navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:block;float:none;}@media (min-width:768px){.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:inline-block;float:none;}}.navbarBrandLogo{position:fixed;top:1vw;left:1vw;img{width:5vw;}}"]);
 
 var Navbar1 =
 /*#__PURE__*/
@@ -186,24 +183,25 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavBarDiv, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Navbar"], {
-        color: "faded",
+        color: "warning",
         light: true,
         expand: "lg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 73
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavbarBrand"], {
         href: "/",
+        as: "/",
         className: "navbarBrandLogo mr-auto",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 74
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -211,7 +209,7 @@ function (_Component) {
         alt: "Santa & the Mrs of West Texas Logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 79
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavbarToggler"], {
@@ -219,7 +217,7 @@ function (_Component) {
         className: "mr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 84
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Collapse"], {
@@ -227,20 +225,20 @@ function (_Component) {
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 85
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Nav"], {
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 86
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -248,20 +246,20 @@ function (_Component) {
         as: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "nav-link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 89
         },
         __self: this
       }, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -269,17 +267,59 @@ function (_Component) {
         as: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "nav-link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 94
         },
         __self: this
-      }, "About")))))));
+      }, "About"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/calendar",
+        as: "/calendar",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102
+        },
+        __self: this
+      }, "Calendar"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/contact",
+        as: "/contact",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }, "Contact")))))));
     }
   }]);
 
@@ -27766,11 +27806,17 @@ var IndexDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
   componentId: "v3thzb-0"
 })(["height:85vh;background-image:url(", ");background-size:100%;background-repeat:no-repeat;"], _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3___default.a);
 
-var Index = function Index(props) {
+var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IndexDiv, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_seo__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27780,16 +27826,10 @@ var Index = function Index(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IndexDiv, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -27807,7 +27847,7 @@ var Index = function Index(props) {
       lineNumber: 30
     },
     __self: this
-  }, "Reveler Media Services Base SEO Template"))));
+  }, "Reveler Media Services Base SEO Template")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -27840,7 +27880,7 @@ var Index = function Index(props) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/logo-4b350ae4a6299b6b2226719c887a350b.png";
+module.exports = "/_next/static/images/logo-f83eedcedd151248bf8f70e4d6d93799.png";
 
 /***/ }),
 
@@ -27851,7 +27891,7 @@ module.exports = "/_next/static/images/logo-4b350ae4a6299b6b2226719c887a350b.png
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/loveStartsHere-1912a0046eda03378ebe064224d1aea8.jpg";
+module.exports = "/_next/static/images/loveStartsHere-0d9f9c94a5b25273fcaf01465ea67efa.jpg";
 
 /***/ }),
 

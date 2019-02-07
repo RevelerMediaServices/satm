@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\about.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\contact.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -27778,10 +27778,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/about.js":
-/*!************************!*\
-  !*** ./pages/about.js ***!
-  \************************/
+/***/ "./pages/contact.js":
+/*!**************************!*\
+  !*** ./pages/contact.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27795,25 +27795,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_seo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next-seo */ "./node_modules/next-seo/dist/index.js");
 /* harmony import */ var next_seo__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_seo__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\pages\\about.js";
+var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\pages\\contact.js";
 
 
 
 
 
-var AboutDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "about__AboutDiv",
-  componentId: "sc-10k7tv3-0"
-})(["height:85vh;background-image:url(", ");background-size:100%;background-repeat:no-repeat;h1{color:red;}"], _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3___default.a);
+var ContactDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "contact__ContactDiv",
+  componentId: "sc-1wd6hj8-0"
+})(["height:85vh;background-image:url(", ");background-size:100%;background-repeat:no-repeat;h1{color:white;}"], _static_images_loveStartsHere_jpg__WEBPACK_IMPORTED_MODULE_3___default.a);
 
-var About = function About() {
+var Contact = function Contact() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AboutDiv, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContactDiv, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -27850,7 +27850,7 @@ var About = function About() {
   }, "Reveler Media Services Base SEO Template")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (About);
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -27867,7 +27867,7 @@ var About = function About() {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/contact")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -27895,15 +27895,15 @@ module.exports = "/_next/static/images/loveStartsHere-0d9f9c94a5b25273fcaf01465e
 
 /***/ }),
 
-/***/ 4:
-/*!******************************!*\
-  !*** multi ./pages/about.js ***!
-  \******************************/
+/***/ 6:
+/*!********************************!*\
+  !*** multi ./pages/contact.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/about', function() {
-module.exports = __webpack_require__(/*! ./pages/about.js */"./pages/about.js");
+__NEXT_REGISTER_PAGE('/contact', function() {
+module.exports = __webpack_require__(/*! ./pages/contact.js */"./pages/contact.js");
 
 return { page: module.exports.default }});
 
@@ -27920,5 +27920,5 @@ module.exports = dll_ea92b26618a5e8aa3a89;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=about.js.map
+},[[6,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=contact.js.map
