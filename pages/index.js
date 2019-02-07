@@ -1,9 +1,18 @@
-import Link from 'next/link'
+import Link from "next/link";
+
+import styled from "styled-components";
+
+const IndexDiv = styled.div`
+  a {
+    color: green;
+  }
+`;
+
 export default () => (
-  <div>
-    Hello World.{' '}
-    <Link href='/about' as={process.env.BACKEND_URL + '/about'}>
+  <IndexDiv>
+    Hello World.{" "}
+    <Link href="/about" as={process.env.BACKEND_URL + "/about"}>
       <a>About</a>
     </Link>
-  </div>
-)
+  </IndexDiv>
+);
