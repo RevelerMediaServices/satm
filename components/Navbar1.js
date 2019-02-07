@@ -69,7 +69,11 @@ export default class Navbar1 extends Component {
     return (
       <NavBarDiv>
         <Navbar color="faded" light expand="lg">
-          <NavbarBrand href="/" className="navbarBrandLogo mr-auto">
+          <NavbarBrand
+            href="/"
+            as={process.env.BACKEND_URL + "/"}
+            className="navbarBrandLogo mr-auto"
+          >
             <img
               src={navbarBrandLogo}
               alt="Santa & the Mrs of West Texas Logo"

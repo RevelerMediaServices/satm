@@ -14,6 +14,7 @@
     "gh-pages": "^2.0.1",
     "next": "^7.0.2",
     "next-images": "^1.0.4",
+    "next-seo": "^1.10.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "reactstrap": "^7.1.0",

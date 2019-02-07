@@ -10,7 +10,6 @@ const LayoutDiv = styled.div``;
 const Layout = props => (
   <LayoutDiv>
     <Head>
-      <title>Santa & the Mrs of West Texas</title>
       <meta property="og:title" content="Santa & the Mrs of West Texas" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="Generate a Canonical Pague URL" />
