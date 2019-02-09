@@ -17,7 +17,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_images_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/images/logo.png */ "./static/images/logo.png");
 /* harmony import */ var _static_images_logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_images_logo_png__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _static_images_Landing_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/images/Landing.jpg */ "./static/images/Landing.jpg");
+/* harmony import */ var _static_images_Landing_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_images_Landing_jpg__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\components\\Layout.js";
+
 
 
 
@@ -26,19 +29,19 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var LayoutDiv = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "Layout__LayoutDiv",
   componentId: "sc-1s258ep-0"
-})([""]);
+})(["height:100vh;background-image:url(", ");background-size:100%;background-repeat:no-repeat;"], _static_images_Landing_jpg__WEBPACK_IMPORTED_MODULE_5___default.a);
 
 var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LayoutDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -46,7 +49,7 @@ var Layout = function Layout(props) {
     content: "Santa & the Mrs of West Texas",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 21
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -54,7 +57,7 @@ var Layout = function Layout(props) {
     content: "website",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -62,7 +65,7 @@ var Layout = function Layout(props) {
     content: "Generate a Canonical Pague URL",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -70,7 +73,7 @@ var Layout = function Layout(props) {
     content: _static_images_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -80,20 +83,20 @@ var Layout = function Layout(props) {
     crossOrigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 25
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar1__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 33
     },
     __self: this
   }, props.children));
@@ -150,7 +153,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 var NavBarDiv = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "Navbar1__NavBarDiv",
   componentId: "sc-1gjvm54-0"
-})([".navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:block;float:none;}@media (min-width:768px){.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:inline-block;float:none;}}.navbarBrandLogo{position:fixed;top:1vw;left:1vw;img{width:5vw;}}"]);
+})([".navbar-nav{float:none;margin:0 auto;display:block;text-align:center;a{font-weight:800;font-size:200%;}}.navbar-nav > li{display:block;float:none;}@media (min-width:768px){.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:inline-block;float:none;}}.customButtonWidth{width:12vw;}.customButtonGroup{background-color:rgba(0,88,0,0.7);}.navlinkColor{color:#cc0000;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;letter-spacing:3px;}"]);
 
 var Navbar1 =
 /*#__PURE__*/
@@ -183,41 +186,32 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavBarDiv, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 86
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Navbar"], {
-        color: "warning",
-        light: true,
+        color: "faded",
         expand: "lg",
+        className: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavbarBrand"], {
         href: "/",
-        as: "/",
         className: "navbarBrandLogo mr-auto",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 88
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _static_images_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-        alt: "Santa & the Mrs of West Texas Logo",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavbarToggler"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavbarToggler"], {
         onClick: this.toggleNavbar,
         className: "mr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 92
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Collapse"], {
@@ -225,20 +219,30 @@ function (_Component) {
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Nav"], {
         navbar: true,
+        className: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 94
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonGroup"], {
+        className: "btn-group-sm rounded-left customButtonGroup",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 95
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        type: "button",
+        class: "btn btn-outline-danger navbar-btn btn customButtonWidth",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -246,80 +250,89 @@ function (_Component) {
         as: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 100
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link",
+        className: "nav-link navlinkColor",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 101
         },
         __self: this
-      }, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 92
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/about",
-        as: "/about",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 93
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 94
-        },
-        __self: this
-      }, "About"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/calendar",
-        as: "/calendar",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 98
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 102
-        },
-        __self: this
-      }, "Calendar"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+      }, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        type: "button",
+        class: "btn btn-outline-danger navbar-btn customButtonWidth",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        prefetch: true,
+        href: "/about",
+        as: "/about",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "nav-link navlinkColor",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114
+        },
+        __self: this
+      }, "About"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        type: "button",
+        class: "btn btn-outline-danger navbar-btn customButtonWidth",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        prefetch: true,
+        href: "/calendar",
+        as: "/calendar",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "nav-link navlinkColor",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }, "Calendar"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        type: "button",
+        class: "btn btn-outline-danger navbar-btn customButtonWidth rounded-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        prefetch: true,
         href: "/contact",
         as: "/contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 133
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link",
+        className: "nav-link navlinkColor",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 138
         },
         __self: this
-      }, "Contact")))))));
+      }, "Contact"))))))));
     }
   }]);
 
@@ -27870,6 +27883,17 @@ var Calendar = function Calendar() {
     })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/calendar")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./static/images/Landing.jpg":
+/*!***********************************!*\
+  !*** ./static/images/Landing.jpg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/Landing-82423be96a18b7fbd549cb17eab1829a.jpg";
 
 /***/ }),
 
