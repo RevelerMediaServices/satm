@@ -7,12 +7,15 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem
+  NavItem,
+  Button,
+  ButtonGroup,
+  Container
 } from "reactstrap";
 
 import styled from "styled-components";
 
-import navbarBrandLogo from "../static/images/logo.png";
+import logo from "../static/images/logo.png";
 
 const NavBarDiv = styled.div`
   .navbar-nav {
@@ -20,6 +23,11 @@ const NavBarDiv = styled.div`
     margin: 0 auto;
     display: block;
     text-align: center;
+
+    a {
+      font-weight: 800;
+      font-size: 200%;
+    }
   }
 
   .navbar-nav > li {
@@ -41,13 +49,31 @@ const NavBarDiv = styled.div`
     }
   }
 
-  .navbarBrandLogo {
-    position: fixed;
-    top: 1vw;
-    left: 1vw;
+  #navbarLogoDiv {
     img {
-      width: 5vw;
+      width: 6em;
+      position: fixed;
+      top: 1em;
+      left: 17vw;
     }
+  }
+
+  .customButtonWidth {
+    width: 12vw;
+  }
+
+  .customButtonGroup {
+    background-color: rgba(0, 88, 0, 0.7);
+
+    box-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+      2px 2px 0 #000;
+  }
+
+  .navlinkColor {
+    color: #cc0000;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+      2px 2px 0 #000;
+    letter-spacing: 3px;
   }
 `;
 
@@ -70,43 +96,65 @@ export default class Navbar1 extends Component {
   render() {
     return (
       <NavBarDiv>
-        <Navbar color="warning" light expand="lg">
+        <div id="navbarLogoDiv">
+          <img src={logo} alt="SatM Logo" />
+        </div>
+
+        <Navbar expand="lg" className="">
           <NavbarBrand
-            href="/"
-            as={process.env.BACKEND_URL + "/"}
+            href={process.env.BACKEND_URL + "/"}
             className="navbarBrandLogo mr-auto"
-          >
-            <img
-              src={navbarBrandLogo}
-              alt="Santa & the Mrs of West Texas Logo"
-            />
-          </NavbarBrand>
+          />
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-              <NavItem>
-                <Link href="/" as={process.env.BACKEND_URL + "/"}>
-                  <a className="nav-link">Home</a>
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/about" as={process.env.BACKEND_URL + "/about"}>
-                  <a className="nav-link">About</a>
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  href="/calendar"
-                  as={process.env.BACKEND_URL + "/calendar"}
+            <Nav navbar className="">
+              <ButtonGroup className="btn-group-sm rounded-left customButtonGroup">
+                <Button
+                  type="button"
+                  className="btn btn-outline-danger navbar-btn btn customButtonWidth"
                 >
-                  <a className="nav-link">Calendar</a>
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/contact" as={process.env.BACKEND_URL + "/contact"}>
-                  <a className="nav-link">Contact</a>
-                </Link>
-              </NavItem>
+                  <Link href="/" as={process.env.BACKEND_URL + "/"}>
+                    <a className="nav-link navlinkColor">Home</a>
+                  </Link>
+                </Button>
+
+                <Button
+                  type="button"
+                  className="btn btn-outline-danger navbar-btn customButtonWidth"
+                >
+                  <Link
+                    prefetch
+                    href="/about"
+                    as={process.env.BACKEND_URL + "/about"}
+                  >
+                    <a className="nav-link navlinkColor">About</a>
+                  </Link>
+                </Button>
+                <Button
+                  type="button"
+                  className="btn btn-outline-danger navbar-btn customButtonWidth"
+                >
+                  <Link
+                    prefetch
+                    href="/calendar"
+                    as={process.env.BACKEND_URL + "/calendar"}
+                  >
+                    <a className="nav-link navlinkColor">Calendar</a>
+                  </Link>
+                </Button>
+                <Button
+                  type="button"
+                  className="btn btn-outline-danger navbar-btn customButtonWidth rounded-right"
+                >
+                  <Link
+                    prefetch
+                    href="/contact"
+                    as={process.env.BACKEND_URL + "/contact"}
+                  >
+                    <a className="nav-link navlinkColor">Contact</a>
+                  </Link>
+                </Button>
+              </ButtonGroup>
             </Nav>
           </Collapse>
         </Navbar>

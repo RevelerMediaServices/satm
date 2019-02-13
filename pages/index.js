@@ -2,34 +2,44 @@ import Layout from "../components/Layout";
 
 import styled from "styled-components";
 
-import img from "../static/images/loveStartsHere.jpg";
-
 import NextSeo from "next-seo";
 
-const IndexDiv = styled.div`
-  height: 85vh;
+import SocialMedia from "../components/SocialMedia";
 
+import img from "../static/images/Landing2.jpg";
+import Typing from "react-typing-animation";
+
+import IndexAnimation from "../components/IndexAnimation";
+
+import Polaroid from "../components/Polaroid";
+import ESWButton from "../components/ESWButton";
+
+const IndexDiv = styled.div`
+  height: 100vh;
   background-image: url(${img});
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+
+  #polaroid {
+    position: absolute;
+    top: 20vh;
+    left: 60vw;
+  }
 `;
 
 const Index = () => (
-  <Layout>
-    <IndexDiv>
-      <NextSeo
-        config={{
-          title: "Santa & the Mrs of West Texas",
-          description: "Santa and Mrs Claus services for West Texas"
-        }}
-      />
-      <h1>
-        RMS Static Website Template
-        <br /> w/Server Side Rendering
-      </h1>
-      <p>Reveler Media Services Base SEO Template</p>
-    </IndexDiv>
-  </Layout>
+  <IndexDiv>
+    <NextSeo
+      config={{
+        title: "Santa & the Mrs of West Texas",
+        description: "Santa and Mrs Claus services for West Texas"
+      }}
+    />
+    <IndexAnimation />
+    <Polaroid className="polaroid" />
+    <SocialMedia />
+    <ESWButton />
+  </IndexDiv>
 );
 
 export default Index;
