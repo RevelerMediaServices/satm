@@ -25,11 +25,11 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var ESWButtonDiv = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "ESWButton__ESWButtonDiv",
   componentId: "d1br8x-0"
-})(["#borderDiv{}.animatedESWButtonDiv{}"]);
+})(["font-family:\"Emilys Candy\",cursive;font-weight:0;position:absolute;top:65vh;left:55vw;font-size:2vw;.btn-red{background:rgba(192,19,19,0.8);border:1vw double rgba(7,80,8,0.5);border-radius:100%;box-shadow:0 0.2vw 0 0.3vw #c91919 inset,0 0 0 0.3vw rgba(65,8,8,0.25),0 1.5vw rgba(255,255,255,0.5) inset,0 0 0 0.5vw rgba(0,0,0,0.25),inset 0 0 0.5vw #000000;cursor:pointer;display:inline-block;height:15vw;width:15vw;color:rgba(7,135,8,1);font-weight:800;text-shadow:-0.04vw -0.04vw 0.3vw rgba(0,0,0,0.5),0.04vw -0.04vw 0.3vw rgba(0,0,0,0.5),-0.04vw 0.04vw 0.3vw rgba(0,0,0,0.5),0.04vw 0.04vw 0.3vw rgba(0,0,0,0.9);}.btn-red:hover{background:rgba(7,80,8,0.8);box-shadow:0 -0.2vw 0 0.3vw rgba(192,19,19,0.8) inset,0 0.3vw 0.3vw rgba(0,0,0,0.17),0 1.5vw rgba(0,0,0,0.32) inset,0 0 0 0.5vw rgba(255,255,255,0.25),inset 0 0 0.5vw #000000;border:1vw double rgba(192,19,19,0.8);color:rgba(192,19,19,0.8);}.animatedESWButtonDiv{}"]);
 var config = {
   mass: 5,
-  tension: 2000,
-  friction: 5000
+  tension: 0,
+  friction: 0
 };
 
 function ESWButton() {
@@ -43,14 +43,7 @@ function ESWButton() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ESWButtonDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "ESWButtonDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_2__["animated"].div, {
@@ -58,29 +51,42 @@ function ESWButton() {
     style: ESWButtonProps,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 63
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+    href: "/home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 65
     },
     __self: this
-  }, "Enter Santa's Workshop"))))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn-red btn-red:hover",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, "Enter", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }), " Santa's ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }), " Workshop")))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (ESWButton);
@@ -100,17 +106,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_spring__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-spring */ "./node_modules/react-spring/web.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _static_images_Joy_8065_01_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/images/Joy_8065-01.svg */ "./static/images/Joy_8065-01.svg");
-/* harmony import */ var _static_images_Joy_8065_01_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_images_Joy_8065_01_svg__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\components\\IndexAnimation.js";
-
 
 
 
 var IndexAnimationDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "IndexAnimation__IndexAnimationDiv",
   componentId: "rakni8-0"
-})(["position:absolute;top:15vh;left:10vw;background:rgba(192,19,19,0.9);border:1vmax double rgba(7,80,8,1);border-radius:2vmax;font-weight:800;-webkit-box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);#borderdiv{margin:1vmax;border-radius:0.5vmax;}.animatedDiv{color:black;width:40vw;font-size:3.5vw;padding-left:0.5vw;padding-bottom:1vh;font-family:\"Mr Dafoe\",cursive;letter-spacing:0.3vw;text-shadow:0.05vmax 0.05vmax 10px #fff;}.bringingJoy{}.permianBasin{}"]);
+})(["position:absolute;top:5vh;left:5vw;background:rgba(192,19,19,0.9);border:1vmax double rgba(7,80,8,1);border-radius:2vmax;font-weight:800;-webkit-box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);#borderdiv{margin:1vmax;border-radius:0.5vmax;}.animatedDiv{color:black;width:40vw;font-size:3.5vw;padding-left:0.5vw;padding-bottom:1vh;font-family:\"Mr Dafoe\",cursive;letter-spacing:0.3vw;text-shadow:0.05vmax 0.05vmax 10px #fff;}.bringingJoy{}.permianBasin{}"]);
 var config = {
   mass: 5,
   tension: 2000,
@@ -136,14 +139,14 @@ function IndexAnimation() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IndexAnimationDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "borderdiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 63
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_1__["animated"].div, {
@@ -151,7 +154,7 @@ function IndexAnimation() {
     style: indexWordProps1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 64
     },
     __self: this
   }, "Bringing Joy & Presents"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_1__["animated"].div, {
@@ -159,7 +162,7 @@ function IndexAnimation() {
     style: indexWordProps2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 70
     },
     __self: this
   }, "to the Permian Basin")));
@@ -269,150 +272,6 @@ var Layout = function Layout(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/NavButtonGroup.js":
-/*!**************************************!*\
-  !*** ./components/NavButtonGroup.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavButtonGroup; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.mjs");
-/* harmony import */ var react_icons_go__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-icons/go */ "./node_modules/react-icons/go/index.mjs");
-var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\components\\NavButtonGroup.js";
-
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-
-
-
-var NavButtonGroupDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "NavButtonGroup__NavButtonGroupDiv",
-  componentId: "sc-1icz608-0"
-})(["border:1px solid #000;box-shadow:-1px 1px #000,-2px 2px #000,-3px 3px #000,-4px 4px #000,-5px 5px #000;padding-top:0.5em;padding-right:0.2em;border-radius:25px;background-color:rgba(0,88,0,0.7);mix-blend-mode:multiply;.divForBorder{}a{font-size:200%;color:red;padding:0.3em;}.navButtonButton{background-color:none;}"]);
-
-var NavButtonGroup =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(NavButtonGroup, _Component);
-
-  function NavButtonGroup() {
-    _classCallCheck(this, NavButtonGroup);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(NavButtonGroup).apply(this, arguments));
-  }
-
-  _createClass(NavButtonGroup, [{
-    key: "render",
-    value: function render() {
-      var links = [{
-        id: 2,
-        name: "Contact",
-        url: "/contact"
-      }, {
-        id: 3,
-        name: "Calendar",
-        url: "/calendar"
-      }, {
-        id: 4,
-        name: "Call",
-        url: "Phone"
-      }];
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavButtonGroupDiv, {
-        className: "",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "divForBorder",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://www.facebook.com/revelermusicllc/",
-        className: "",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaFacebookF"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://www.facebook.com/revelermusicllc/",
-        className: "",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaPhone"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://www.facebook.com/revelermusicllc/",
-        className: "",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_go__WEBPACK_IMPORTED_MODULE_5__["GoCalendar"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
-      }))));
-    }
-  }]);
-
-  return NavButtonGroup;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-
 
 /***/ }),
 
@@ -691,20 +550,20 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var PolaroidDiv = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Polaroid__PolaroidDiv",
   componentId: "sc-1wxu2yy-0"
-})(["position:absolute;left:60vw;top:20vh;img{width:17vw;height:13vw;}font-size:1vw;div.polaroid{width:17vw;padding:10px 10px 20px 10px;border:1px solid #bfbfbf;background-color:white;box-shadow:10px 10px 5px #aaaaaa;height:17vw;font-size:1vw;}div.rotate_right{float:left;-ms-transform:rotate(7deg);-webkit-transform:rotate(7deg);transform:rotate(7deg);}div.rotate_left{float:left;-ms-transform:rotate(-8deg);-webkit-transform:rotate(-8deg);transform:rotate(-8deg);}"]);
+})(["position:absolute;left:52vw;top:10vh;img{width:17vw;height:13vw;}font-size:1vw;.polaroid{width:18.6vw;padding:0.8vw 0.8vw 1.6vw 0.8vw;border:1px solid #bfbfbf;background-color:white;box-shadow:0.3vw 0.3vw 0.15vw #aaaaaa;height:19vw;font-size:1vw;}.rotate_right{float:left;-ms-transform:rotate(7deg);-webkit-transform:rotate(7deg);transform:rotate(7deg);}.rotate_left{float:left;-ms-transform:rotate(-8deg);-webkit-transform:rotate(-8deg);transform:rotate(-8deg);}.caption{font-family:\"IM Fell DW Pica SC\",serif;}"]);
 
 var Polaroid = function Polaroid() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PolaroidDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "polaroid rotate_right",
+    className: "polaroid rotate_right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -714,21 +573,21 @@ var Polaroid = function Polaroid() {
     height: "213",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "caption",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 51
     },
     __self: this
-  }, "The pulpit rock in Lysefjorden, Norway.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Mrs. Santa says, \"Love you, Have a Merry Christmas\"")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "polaroid rotate_left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -738,17 +597,17 @@ var Polaroid = function Polaroid() {
     height: "213",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 57
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     class: "caption",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 63
     },
     __self: this
-  }, "Monterosso al Mare. One of the five villages in Cinque Terre, Italy.")));
+  }, "Santa says, \"Bake Cookies, Enjoy Family and Be Good\"")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Polaroid);
@@ -769,8 +628,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var _NavButtonGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavButtonGroup */ "./components/NavButtonGroup.js");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.mjs");
+/* harmony import */ var react_icons_go__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/go */ "./node_modules/react-icons/go/index.mjs");
 var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\components\\SocialMedia.js";
 
 
@@ -780,22 +639,88 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var SocialMediaDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "SocialMedia__SocialMediaDiv",
   componentId: "sc-1bicck7-0"
-})(["position:absolute;top:50vh;left:60vw;"]);
+})(["position:absolute;top:50vh;left:23vw;ul{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin:0;padding:0;display:flex;}ul li{list-style:none;}ul li a{width:5vw;height:5vw;display:block;margin:0 0.75vw;border-radius:50%;padding-top:0.9vw;padding-left:1.1vw;box-sizing:border-box;text-decoration:none;box-shadow:0.3vw 0.3vw 1.2vw 0.3vw rgba(0,0,0,1);background:linear-gradient(0deg,#ddd,#fff);transition:0.75s;color:rgba(192,8,8,1);font-size:2.5vw;}ul li a:hover{box-shadow:0 0.05vw 0.125vw rgba(0,0,0,0.3);color:rgba(8,80,8,1);}ul li a .fa{width:100%;height:100%;display:block;background:linear-gradient(0deg,#fff,#ddd);border-radius:50%;line-height:calc(6vw - 1.25vw);font-size:2.5vw;color:white;transition:0.5s;}"]);
 
 var SocialMedia = function SocialMedia() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SocialMediaDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 65
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavButtonGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 66
     },
     __self: this
-  }));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.facebook.com/revelermusicllc/",
+    className: "fa",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaFacebookF"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.facebook.com/revelermusicllc/",
+    className: "fa",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaPhone"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/home",
+    className: "fa",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_go__WEBPACK_IMPORTED_MODULE_4__["GoCalendar"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SocialMedia);
@@ -49168,17 +49093,6 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ "./static/images/Joy_8065-01.svg":
-/*!***************************************!*\
-  !*** ./static/images/Joy_8065-01.svg ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/Joy_8065-01-e496794ac833677afa2da0d543565eb7.svg";
-
-/***/ }),
-
 /***/ "./static/images/Landing.jpg":
 /*!***********************************!*\
   !*** ./static/images/Landing.jpg ***!
@@ -49186,7 +49100,7 @@ module.exports = "/_next/static/images/Joy_8065-01-e496794ac833677afa2da0d543565
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/Landing-82423be96a18b7fbd549cb17eab1829a.jpg";
+module.exports = "/_next/static/images/Landing-4f57de663a8ca87e373689f48e398263.jpg";
 
 /***/ }),
 
@@ -49197,7 +49111,7 @@ module.exports = "/_next/static/images/Landing-82423be96a18b7fbd549cb17eab1829a.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/Landing1-00951ec51acbcf62ccc25f60f1f4d140.jpg";
+module.exports = "/_next/static/images/Landing1-d25360d761275aefec437e564825f036.jpg";
 
 /***/ }),
 
