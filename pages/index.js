@@ -21,9 +21,6 @@ const IndexDiv = styled.div`
   background-repeat: no-repeat;
 
   #polaroid {
-    position: absolute;
-    top: 20vh;
-    left: 60vw;
   }
 `;
 
@@ -36,7 +33,7 @@ const Index = () => (
       }}
     />
     <IndexAnimation />
-    <Polaroid className="polaroid" />
+    <Polaroid />
     <SocialMedia />
     <ESWButton />
   </IndexDiv>

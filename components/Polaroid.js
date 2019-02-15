@@ -5,8 +5,8 @@ import polaroidImg1 from "../static/images/Landing1.jpg";
 
 const PolaroidDiv = styled.div`
   position: absolute;
-  left: 60vw;
-  top: 20vh;
+  left: 52vw;
+  top: 10vh;
 
   img {
     width: 17vw;
@@ -14,37 +14,43 @@ const PolaroidDiv = styled.div`
   }
   font-size: 1vw;
 
-  div.polaroid {
-    width: 17vw;
-    padding: 10px 10px 20px 10px;
+  .polaroid {
+    width: 18.6vw;
+    padding: 0.8vw 0.8vw 1.6vw 0.8vw;
     border: 1px solid #bfbfbf;
     background-color: white;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    height: 17vw;
+    box-shadow: 0.3vw 0.3vw 0.15vw #aaaaaa;
+    height: 19vw;
     font-size: 1vw;
   }
 
-  div.rotate_right {
+  .rotate_right {
     float: left;
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Safari */
     transform: rotate(7deg);
   }
 
-  div.rotate_left {
+  .rotate_left {
     float: left;
     -ms-transform: rotate(-8deg); /* IE 9 */
     -webkit-transform: rotate(-8deg); /* Safari */
     transform: rotate(-8deg);
+  }
+
+  .caption {
+    font-family: "IM Fell DW Pica SC", serif;
   }
 `;
 
 const Polaroid = () => {
   return (
     <PolaroidDiv>
-      <div class="polaroid rotate_right">
+      <div className="polaroid rotate_right">
         <img src={polaroidImg} alt="Pulpit rock" width="284" height="213" />
-        <p className="caption">The pulpit rock in Lysefjorden, Norway.</p>
+        <p className="caption">
+          Mrs. Santa says, "Love you, Have a Merry Christmas"
+        </p>
       </div>
 
       <div className="polaroid rotate_left">
@@ -54,8 +60,8 @@ const Polaroid = () => {
           width="284"
           height="213"
         />
-        <p class="caption">
-          Monterosso al Mare. One of the five villages in Cinque Terre, Italy.
+        <p className="caption">
+          Santa says, "Bake Cookies, Enjoy Family and Be Good"
         </p>
       </div>
     </PolaroidDiv>

@@ -26,6 +26,12 @@ export default class MyDocument extends Document {
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
           <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossOrigin="anonymous"
+          />
+          <link
             href="https://fonts.googleapis.com/css?family=Charm|Charmonman|Cormorant+SC|Diplomata|Diplomata+SC|Emilys+Candy|Euphoria+Script|IM+Fell+DW+Pica+SC|Meddon|MedievalSharp|Milonga|Montez|Mr+Bedfort|Mr+Dafoe|Mrs+Saint+Delafield|Rochester|Romanesco|Rouge+Script|Sancreek|UnifrakturCook:700|Zilla+Slab+Highlight"
             rel="stylesheet"
           />
@@ -44,6 +50,7 @@ export default class MyDocument extends Document {
 Loaded Fonts
 font-family: 'Charm', cursive;
 font-family: 'Mr Dafoe', cursive;
+
 font-family: 'Rochester', cursive;
 font-family: 'Charmonman', cursive;
 font-family: 'Montez', cursive;
@@ -55,12 +62,14 @@ font-family: 'Cormorant SC', serif;
 font-family: 'Mrs Saint Delafield', cursive;
 font-family: 'Milonga', cursive;
 font-family: 'Sancreek', cursive;
+
 font-family: 'IM Fell DW Pica SC', serif;
 font-family: 'UnifrakturCook', cursive;
 font-family: 'MedievalSharp', cursive;
 font-family: 'Diplomata SC', cursive;
 font-family: 'Diplomata', cursive;
 font-family: 'Zilla Slab Highlight', cursive;
+
 font-family: 'Romanesco', cursive;
 font-family: 'Mr Bedfort', cursive;
 

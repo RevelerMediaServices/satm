@@ -2,12 +2,10 @@ import { useSpring, animated } from "react-spring";
 
 import styled from "styled-components";
 
-import borderSVG from "../static/images/Joy_8065-01.svg";
-
 const IndexAnimationDiv = styled.div`
   position: absolute;
-  top: 15vh;
-  left: 10vw;
+  top: 5vh;
+  left: 5vw;
   background: rgba(192, 19, 19, 0.9);
   border: 1vmax double rgba(7, 80, 8, 1);
   border-radius: 2vmax;
@@ -30,7 +28,7 @@ const IndexAnimationDiv = styled.div`
     padding-bottom: 1vh;
     font-family: "Mr Dafoe", cursive;
     letter-spacing: 0.3vw;
-    text-shadow: 0.05vmax 0.05vmax 10px #fff;
+    text-shadow: 0.05vmax 0.05vmax 0.1vw #fff;
   }
 
   .bringingJoy {
