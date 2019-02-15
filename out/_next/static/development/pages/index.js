@@ -113,7 +113,7 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var IndexAnimationDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "IndexAnimation__IndexAnimationDiv",
   componentId: "rakni8-0"
-})(["position:absolute;top:5vh;left:5vw;background:rgba(192,19,19,0.9);border:1vmax double rgba(7,80,8,1);border-radius:2vmax;font-weight:800;-webkit-box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);#borderdiv{margin:1vmax;border-radius:0.5vmax;}.animatedDiv{color:black;width:40vw;font-size:3.5vw;padding-left:0.5vw;padding-bottom:1vh;font-family:\"Mr Dafoe\",cursive;letter-spacing:0.3vw;text-shadow:0.05vmax 0.05vmax 10px #fff;}.bringingJoy{}.permianBasin{}"]);
+})(["position:absolute;top:5vh;left:5vw;background:rgba(192,19,19,0.9);border:1vmax double rgba(7,80,8,1);border-radius:2vmax;font-weight:800;-webkit-box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);box-shadow:5px 5px 5px 0px #000000,inset 4px 4px 15px 0px #000000,5px 5px 15px 5px rgba(0,0,0,0);#borderdiv{margin:1vmax;border-radius:0.5vmax;}.animatedDiv{color:black;width:40vw;font-size:3.5vw;padding-left:0.5vw;padding-bottom:1vh;font-family:\"Mr Dafoe\",cursive;letter-spacing:0.3vw;text-shadow:0.05vmax 0.05vmax 0.1vw #fff;}.bringingJoy{}.permianBasin{}"]);
 var config = {
   mass: 5,
   tension: 2000,
@@ -245,27 +245,17 @@ var Layout = function Layout(props) {
       lineNumber: 16
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "stylesheet",
-    href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css",
-    integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
-    crossOrigin: "anonymous",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar1__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 19
     },
     __self: this
   }, props.children));
@@ -601,7 +591,7 @@ var Polaroid = function Polaroid() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "caption",
+    className: "caption",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
@@ -701,13 +691,13 @@ var SocialMedia = function SocialMedia() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/calendar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 78
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "/home",
     className: "fa",
     __source: {
       fileName: _jsxFileName,
@@ -49023,13 +49013,13 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var IndexDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__IndexDiv",
   componentId: "v3thzb-0"
-})(["height:100vh;background-image:url(", ");background-size:cover;background-repeat:no-repeat;#polaroid{position:absolute;top:20vh;left:60vw;}"], _static_images_Landing2_jpg__WEBPACK_IMPORTED_MODULE_5___default.a);
+})(["height:100vh;background-image:url(", ");background-size:cover;background-repeat:no-repeat;#polaroid{}"], _static_images_Landing2_jpg__WEBPACK_IMPORTED_MODULE_5___default.a);
 
 var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IndexDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_seo__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -49039,32 +49029,31 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 29
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IndexAnimation__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 35
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Polaroid__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: "polaroid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SocialMedia__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ESWButton__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     },
     __self: this
   }));
