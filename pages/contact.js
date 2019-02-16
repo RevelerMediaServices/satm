@@ -1,20 +1,14 @@
-import Layout from "../components/Layout";
-
 import styled from "styled-components";
-
-import img from "../static/images/loveStartsHere.jpg";
-
 import NextSeo from "next-seo";
+
+import Layout from "../components/Layout";
+import LetterToSanta from "../components/LetterToSanta";
 
 const ContactDiv = styled.div`
   height: 85vh;
-
-  background-image: url(${img});
-  background-size: 100%;
-  background-repeat: no-repeat;
-
   h1 {
-    color: white;
+    color: black;
+    text-align: center;
   }
 `;
 
@@ -27,11 +21,8 @@ const Contact = () => (
           description: "Santa and Mrs Claus services for West Texas"
         }}
       />
-      <h1>
-        RMS Static Website Template
-        <br /> w/Server Side Rendering
-      </h1>
-      <p>Reveler Media Services Base SEO Template</p>
+      <h1>Contact Santa & the Mrs of West Texas</h1>
+      <LetterToSanta />
     </ContactDiv>
   </Layout>
 );

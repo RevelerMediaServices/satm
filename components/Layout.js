@@ -5,7 +5,9 @@ import metaImage from "../static/images/logo.png";
 
 import styled from "styled-components";
 
-const LayoutDiv = styled.div``;
+const LayoutDiv = styled.div`
+  height: 100vh;
+`;
 
 const Layout = props => (
   <LayoutDiv>

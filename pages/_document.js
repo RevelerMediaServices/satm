@@ -35,6 +35,14 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Charm|Charmonman|Cormorant+SC|Diplomata|Diplomata+SC|Emilys+Candy|Euphoria+Script|IM+Fell+DW+Pica+SC|Meddon|MedievalSharp|Milonga|Montez|Mr+Bedfort|Mr+Dafoe|Mrs+Saint+Delafield|Rochester|Romanesco|Rouge+Script|Sancreek|UnifrakturCook:700|Zilla+Slab+Highlight"
             rel="stylesheet"
           />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
         </Head>
         <body style={{ padding: "0", margin: "0" }}>
           <Main />
