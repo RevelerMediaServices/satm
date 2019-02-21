@@ -140,7 +140,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 var NavBarDiv = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "Navbar1__NavBarDiv",
   componentId: "sc-1gjvm54-0"
-})(["background-color:yellow;height:15vh;.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;a{font-weight:800;font-size:200%;}}.navbar-nav > li{display:block;float:none;}@media (min-width:768px){.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:inline-block;float:none;}}#navbarLogoDiv{img{width:6em;position:fixed;top:1em;left:17vw;}}.customButtonWidth{width:12vw;}.customButtonGroup{background-color:rgba(0,88,0,0.7);box-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;}.navlinkColor{color:#cc0000;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;letter-spacing:3px;}"]);
+})(["height:15vh;.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;a{font-weight:800;font-size:200%;}}.navbar-nav > li{display:block;float:none;}@media (min-width:768px){.navbar-nav{float:none;margin:0 auto;display:block;text-align:center;}.navbar-nav > li{display:inline-block;float:none;}}#navbarLogoDiv{img{width:6em;position:fixed;top:1em;left:17vw;z-index:9999;}}.customButtonWidth{width:12vw;}.customButtonGroup{background-color:rgba(0,88,0,0.7);box-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;}.navlinkColor{color:#cc0000;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;letter-spacing:3px;}"]);
 
 var Navbar1 =
 /*#__PURE__*/
@@ -194,6 +194,7 @@ function (_Component) {
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Navbar"], {
         expand: "lg",
         className: "",
+        fixed: "top",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 106
@@ -27814,7 +27815,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_images_christmasIsAbout_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_images_christmasIsAbout_jpg__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _static_images_movieTheatre_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../static/images/movieTheatre.png */ "./static/images/movieTheatre.png");
 /* harmony import */ var _static_images_movieTheatre_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_static_images_movieTheatre_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _static_images_santaBakingHaystacks_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../static/images/santaBakingHaystacks.jpg */ "./static/images/santaBakingHaystacks.jpg");
+/* harmony import */ var _static_images_santaBakingHaystacks_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_static_images_santaBakingHaystacks_jpg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _static_images_mrsSantaEating_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/images/mrsSantaEating.jpg */ "./static/images/mrsSantaEating.jpg");
+/* harmony import */ var _static_images_mrsSantaEating_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_images_mrsSantaEating_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _static_images_santa_theMrsDancing_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/images/santa&theMrsDancing.jpg */ "./static/images/santa&theMrsDancing.jpg");
+/* harmony import */ var _static_images_santa_theMrsDancing_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_static_images_santa_theMrsDancing_jpg__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _static_images_santa_theMrsSelfie_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/images/santa&theMrsSelfie.jpg */ "./static/images/santa&theMrsSelfie.jpg");
+/* harmony import */ var _static_images_santa_theMrsSelfie_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_static_images_santa_theMrsSelfie_jpg__WEBPACK_IMPORTED_MODULE_11__);
 var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\Client Work\\Santa and the Mrs of West Texas\\website\\satm\\satm\\pages\\about.js";
+
+
+
+
 
 
 
@@ -27826,19 +27839,19 @@ var _jsxFileName = "C:\\Users\\HC\\Desktop\\RevelerMusic\\RevelerMediaServices\\
 var AboutDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "about__AboutDiv",
   componentId: "sc-10k7tv3-0"
-})(["height:85vh;h1{color:red;text-align:center;}h2{text-align:center;padding-top:1vh;}h4{text-align:left;padding-top:1vh;}#aboutIntroduction{img{width:10vw;float:left;margin:1vw;}}#imgChristmasIsAbout{width:8vw;float:left;margin:1vw;}#imgMovieTheatre{width:15vw;float:right;margin:1vw;}"]);
+})(["height:85vh;img{border:0.5vw solid white;outline:0.2vw solid black;border-radius:0.3vw;}h1{color:black;text-align:center;font-family:\"Charm\",cursive;font-size:4vw;font-weight:800;font-variant:small-caps;}p{font-family:\"IM Fell DW Pica SC\",serif;font-size:1.1vw;text-align:justify;}h2{text-align:center;padding-top:1vh;font-family:\"Charm\",cursive;font-size:2.2vw;}h4{text-align:left;padding-top:1vh;font-size:1.5vw;}#aboutIntroduction{img{width:10vw;float:left;margin:1vw;}}#upTo100Percent{color:red;font-weight:800;}#imgChristmasIsAbout{width:8vw;float:left;margin:1vw;}#imgMovieTheatre{width:15vw;float:right;margin:1vw;}#imgSanta{width:7vw;float:left;margin:1vw;}#imgTheMrs{width:7vw;float:right;margin:1vw;}.santaSays{background-color:rgba(192,8,8,0.8);color:rgba(8,192,8,1);margin-top:1vw;border-radius:0.5vw;padding:0.5vw;border:double black 0.5vw;box-shadow:0.1vw 0.1vw 0.5vw 0 rgba(0,0,0,0.7);text-shadow:-0.1vw -0.1vw 0 #000,0.1vw -0.1vw 0 #000,-0.1vw 0.1vw 0 #000,0.1vw 0.1vw 0 #000;}#bringingItTogetherHeader{width:100%;margin-top:1vw;font-size:3vw;}#imgSantaTheMrsDancing{width:100%;padding:1vw;}#imgSantaTheMrsSelfie{width:100%;padding:1vw;}#bringItTogetherParagraph{margin-top:2vw;font-size:1.4vw;}"]);
 
 var About = function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 124
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AboutDiv, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 125
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_seo__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -27848,59 +27861,66 @@ var About = function About() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 126
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 132
     },
     __self: this
   }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 133
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 134
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 135
     },
     __self: this
   }, "Meet Santa & the Mrs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     id: "aboutIntroduction",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 136
     },
     __self: this
-  }, "With more than 40 years in caring for and nuturing the West Texas area, Santa & the Mrs' heart belong to the West Texas people. Living in an undisclosed location in central West Texas, Santa & the Mrs", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, "With more than 40 years of the caring for and of the nuturing of the West Texas area, Santa & the Mrs' heart belong to the West Texas people. Living in an undisclosed location in central West Texas, Santa & the Mrs \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _static_images_bestOneSoFar_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
     alt: "Introduction Image of Santa & the Mrs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 141
     },
     __self: this
-  }), "are centrally located, and the two are more than happy to travel. Although Santa & the Mrs do have a $50 appearance fee, all fees or tips earned will be donated to Toys for Tots or other verified charity. Up to 100% discount on the appearance fee for qualifying charities or good causes."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }), "are more than happy to travel within the Permian Basin. Although Santa & the Mrs do have a $50 appearance fee, all fees and tips earned will be donated to Toys for Tots or other verified charity.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    id: "upTo100Percent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 145
+    },
+    __self: this
+  }, "\xA0Up to a 100% discount\xA0"), "on the appearance fee for qualifying charities or good causes."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
     },
     __self: this
   }, "Why Do This?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     id: "whyDoThis",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 149
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -27909,7 +27929,7 @@ var About = function About() {
     id: "imgChristmasIsAbout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 150
     },
     __self: this
   }), " ", "the Mrs is often heard saying, \"Santa, sometimes people forget the true meaning of Christmas.\" With this though in mind, Santa & the Mrs of West Texas intend to make sure that each and every West Texan he or she meets will be reminded why all of us do this. Santa & the Mrs do this because the Christmas Spirit is meant to be \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -27918,53 +27938,130 @@ var About = function About() {
     id: "imgMovieTheatre",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 160
     },
     __self: this
   }), "shared. Santa & the Mrs do this to meet the amazing people of the West Texas area. Santa & the Mrs do this because, Mrs Santa, \"It bring Joy to the people\" of West Texas. Come be a part of our family!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 171
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 172
     },
     __self: this
   }, "Santa"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 173
     },
     __self: this
-  }, "Santa spends most of his time, when not at work with the elves, spending and enjoying time with the Mrs. Little known fact about Santa Claus is he not only enjoys eating cookies, but Santa also loves to bake cookies. If one is really lucky or good, he or she may be treated with one of Santa's amazing Buck Eyes or maybe one of His nummy Haystacks or Special Ks or the perfectly fluffy peanut brittle #yummyFace.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "aboutQuotes",
+  }, "Santa spends most of his time, when not at work with the elves, \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _static_images_santaBakingHaystacks_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
+    alt: "Image of Santa Baking Cookies",
+    id: "imgSanta",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 176
+    },
+    __self: this
+  }), "spending and enjoying time with the Mrs. Little known fact about Santa Claus is he not only enjoys eating cookies, but Santa also loves to bake cookies. If one is really lucky or good, he or she may be treated with one of Santa's amazing Buck Eyes or maybe one of His nummy Haystacks or Special Ks or the perfectly fluffy peanut brittle #yummyFace.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "aboutQuotes santaSays ",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 187
     },
     __self: this
   }, "Santa says, \"Bake Cookies, Enjoy Family and Be Good. Ho, Ho, Ho!\"")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 191
     },
     __self: this
   }, "the Mrs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 192
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _static_images_mrsSantaEating_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    alt: "Image of the Mrs Eating at the Barbeque",
+    id: "imgTheMrs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 193
     },
     __self: this
-  }, "Bringing It All Together")))));
+  }), " ", "With a deep seated faith in God and with a passionate loyatly to the Permian Basin, the Mrs has dedicated her life to the caring and to the nuturing of others. the Mrs raised two outstanding and successful children while devoting herself to bringing new life to the world as an OBGYN nurse at Women's and Children's Hospital in Odessa. Now retired the Mrs spends most of her time fattening up Santa and playing with the reindeer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "aboutQuotes santaSays",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 207
+    },
+    __self: this
+  }, "the Mrs says, \"Love you, Have a Merry Christmas\""))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 212
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    id: "bringingItTogetherHeader",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213
+    },
+    __self: this
+  }, "Bringing It All Together"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+    lg: 3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _static_images_santa_theMrsDancing_jpg__WEBPACK_IMPORTED_MODULE_10___default.a,
+    alt: "Image of Santa & the Mrs Dancing",
+    id: "imgSantaTheMrsDancing",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 215
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 221
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    id: "bringItTogetherParagraph",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 222
+    },
+    __self: this
+  }, "With a small appearance fee of 50 dollars, that can be waived and if not will be donated to a verifed and worthy cause, Santa & the Mrs will entertain the children, bring Joy to older and spread the true meaning of Christas all the while. With more than 40 years of dedicated service to West Texas, Santa & the Mrs strive to add real value to the Permian Basin.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+    lg: 3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 231
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _static_images_santa_theMrsSelfie_jpg__WEBPACK_IMPORTED_MODULE_11___default.a,
+    alt: "Image of Santa & the Mrs Selfie",
+    id: "imgSantaTheMrsSelfie",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 232
+    },
+    __self: this
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
@@ -28031,6 +28128,50 @@ module.exports = "/_next/static/images/logo-4b350ae4a6299b6b2226719c887a350b.png
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/movieTheatre-bc178cb21944ad52be9d7ebbaccd70ff.png";
+
+/***/ }),
+
+/***/ "./static/images/mrsSantaEating.jpg":
+/*!******************************************!*\
+  !*** ./static/images/mrsSantaEating.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/mrsSantaEating-076d4af8451a88fb986eb0580b9f4776.jpg";
+
+/***/ }),
+
+/***/ "./static/images/santa&theMrsDancing.jpg":
+/*!***********************************************!*\
+  !*** ./static/images/santa&theMrsDancing.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/santa&theMrsDancing-8c96e26edf35ded4bbb6d72f3cd7f850.jpg";
+
+/***/ }),
+
+/***/ "./static/images/santa&theMrsSelfie.jpg":
+/*!**********************************************!*\
+  !*** ./static/images/santa&theMrsSelfie.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/santa&theMrsSelfie-e5935b1ef240147b87ef873262d6323e.jpg";
+
+/***/ }),
+
+/***/ "./static/images/santaBakingHaystacks.jpg":
+/*!************************************************!*\
+  !*** ./static/images/santaBakingHaystacks.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/santaBakingHaystacks-5757868b134cdfdb56529f24261b0086.jpg";
 
 /***/ }),
 
