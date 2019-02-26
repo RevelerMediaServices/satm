@@ -296,8 +296,8 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         prefetch: true,
-        href: "/calendar",
-        as: "/calendar",
+        href: "/eventCalendar",
+        as: "/eventCalendar",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 138
@@ -28197,7 +28197,7 @@ module.exports = "/_next/static/images/yummy-fa95c2b4e8b13e9684fe0711afb5d104.pn
 
 /***/ }),
 
-/***/ 5:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -28222,5 +28222,5 @@ module.exports = dll_ea92b26618a5e8aa3a89;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]));;
+},[[7,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map
