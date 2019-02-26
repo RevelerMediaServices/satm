@@ -468,8 +468,8 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         prefetch: true,
-        href: "/calendar",
-        as: "/calendar",
+        href: "/eventCalendar",
+        as: "/eventCalendar",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 138
@@ -693,8 +693,8 @@ var SocialMedia = function SocialMedia() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/calendar",
-    as: "/calendar",
+    href: "/eventCalendar",
+    as: "/eventCalendar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 78
@@ -49129,7 +49129,7 @@ module.exports = "/_next/static/images/logo-4b350ae4a6299b6b2226719c887a350b.png
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -49154,5 +49154,5 @@ module.exports = dll_ea92b26618a5e8aa3a89;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[6,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
