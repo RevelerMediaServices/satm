@@ -9,7 +9,6 @@ module.exports = optimizedImages(
       return {
         "/": { page: "/" },
         "/about": { page: "/about" },
-        "/calendar": { page: "/calendar" },
         "/contact": { page: "/contact" },
         "/home": { page: "/home" }
       };

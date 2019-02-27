@@ -61,7 +61,7 @@ function ESWButton() {
   return (
     <ESWButtonDiv>
       <animated.div className="animatedESWButtonDiv" style={ESWButtonProps}>
-        <Link href={process.env.BACKEND_URL + "/home"}>
+        <Link href={process.env.BACKEND_URL + "/about"}>
           <a>
             <button className="btn-red btn-red:hover">
               Enter

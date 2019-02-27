@@ -75,7 +75,7 @@ const SocialMedia = () => (
         </a>
       </li>
       <li>
-        <Link href={process.env.BACKEND_URL + "/calendar"}>
+        <Link href={process.env.BACKEND_URL + "/contact"}>
           <a className="fa">
             <GoCalendar />
           </a>

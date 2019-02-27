@@ -135,18 +135,6 @@ export default class Navbar1 extends Component {
                 </Button>
                 <Button
                   type="button"
-                  className="btn btn-outline-danger navbar-btn customButtonWidth"
-                >
-                  <Link
-                    prefetch
-                    href="/calendar"
-                    as={process.env.BACKEND_URL + "/calendar"}
-                  >
-                    <a className="nav-link navlinkColor">Calendar</a>
-                  </Link>
-                </Button>
-                <Button
-                  type="button"
                   className="btn btn-outline-danger navbar-btn customButtonWidth rounded-right"
                 >
                   <Link
