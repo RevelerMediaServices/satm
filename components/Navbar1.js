@@ -18,7 +18,6 @@ import styled from "styled-components";
 import logo from "../static/images/logo.png";
 
 const NavBarDiv = styled.div`
-  background-color: yellow;
   height: 15vh;
 
   .navbar-nav {

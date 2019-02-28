@@ -36,6 +36,10 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
+            href="https://fonts.googleapis.com/css?family=Cookie|Patrick+Hand|Permanent+Marker|Special+Elite"
+            rel="stylesheet"
+          />
+          <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
