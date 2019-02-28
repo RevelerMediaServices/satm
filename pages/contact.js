@@ -6,10 +6,6 @@ import LetterToSanta from "../components/LetterToSanta";
 
 const ContactDiv = styled.div`
   height: 85vh;
-  h1 {
-    color: black;
-    text-align: center;
-  }
 `;
 
 const Contact = () => (
@@ -21,7 +17,6 @@ const Contact = () => (
           description: "Santa and Mrs Claus services for West Texas"
         }}
       />
-      <h1>Contact Santa & the Mrs of West Texas</h1>
       <LetterToSanta />
     </ContactDiv>
   </Layout>
