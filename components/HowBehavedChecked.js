@@ -11,6 +11,8 @@ const HowBehavedSection = styled.section`
 
   #imgCoal {
     width: 5vw;
+    margin: 0.2vw;
+    border: 0.2vw solid black;
   }
 
   #rowNaughty {
@@ -18,20 +20,32 @@ const HowBehavedSection = styled.section`
       font-weight: 900;
       font-size: 1.3vw;
       margin-bottom: 2vw;
+      text-align: center;
+      padding-top: 0.2vw;
     }
 
     p {
-      font-size: 0.8vw;
+      font-size: 1vw;
       letter-spacing: 0;
+      text-align: justify;
     }
+  }
+
+  #wouldWait {
+    color: red;
+    font-size: 1.3vw;
+    margin-top: 1vw;
+    padding-left: 2vw;
   }
 `;
 
-export function NaughtyChecked() {
+function NaughtyChecked() {
   return (
     <HowBehavedSection>
       <Row id="rowNaughty">
-        <Col xs={3}>I would wait to send this!</Col>
+        <Col id="wouldWait" xs={3}>
+          I would wait to send this!
+        </Col>
         <Col xs={6}>
           <h4>You have been Bad?</h4>
           <p>
@@ -47,10 +61,4 @@ export function NaughtyChecked() {
   );
 }
 
-export function NiceChecked() {
-  return <HowBehavedSection>Nice Checked</HowBehavedSection>;
-}
-
-export function VeryNiceChecked() {
-  return <HowBehavedSection>Very Nice Checked</HowBehavedSection>;
-}
+export default NaughtyChecked;

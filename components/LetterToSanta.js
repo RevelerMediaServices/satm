@@ -3,17 +3,17 @@ import { useState } from "react";
 import styled from "styled-components";
 
 import imgPostcardStamp from "../static/images/stamp.png";
+import imgVectorSantaBaking from "../static/images/BakingSanta-01.png";
 
+import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 import Radio from "@material-ui/core/Radio";
-import InputLabel from "@material-ui/core/InputLabel";
 import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
 
-import {
-  NaughtyChecked,
-  NiceChecked,
-  VeryNiceChecked
-} from "./HowBehavedChecked";
+import { Row, Col } from "reactstrap";
+
+import NaughtyChecked from "./HowBehavedChecked";
 
 const LetterToSantaSection = styled.section`
   #innerBorder {
@@ -28,7 +28,7 @@ const LetterToSantaSection = styled.section`
     left: 50%;
     transform: translate(-50%, 0%);
     width: 40vw;
-    height: 25vw;
+    height: auto;
     border: 1vw dashed rgba(192, 8, 8, 1);
     outline: 0.2vw solid black;
     box-shadow: -0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.8);
@@ -50,9 +50,14 @@ const LetterToSantaSection = styled.section`
     text-align: center;
   }
 
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+
   p {
     font-family: "Special Elite", cursive;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     text-align: left;
     margin-left: 0.5vw;
     font-variant: small-caps;
@@ -86,22 +91,95 @@ const LetterToSantaSection = styled.section`
     width: 2vw;
   }
 
-  #inputHowBehaved {
-    width: 4vw;
-    font-size: 1vw;
+  #rowEmail {
+    font-family: "Special Elite", cursive;
+    font-size: 1.75vw;
+    text-align: left;
+    margin-left: 0.5vw;
+    font-variant: small-caps;
+    width: 100%;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+    margin-top: -1.5vw;
   }
 
-  #pRadioGroupHowBehaved {
+  #rowHaveBeen {
+    font-family: "Special Elite", cursive;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 0.5vw;
+    font-variant: small-caps;
+    width: 100%;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+    margin-bottom: 0.5vw;
+  }
+
+  #rowRadioGroupHowBehaved {
     text-align: right;
     padding-right: 0.5vw;
+    margin-top: 0;
+    margin-bottom: 0.5vw;
   }
 
   #buttonPostcardSubmit {
-    position: absolute;
-    top: 50%;
-    left: 0.5vw;
-    width: 10vw;
+    width: 8vw;
+    font-size: 0.8vw;
+    padding: 0;
+  }
+
+  .radioButtonsBadorGood {
+    margin-right: 2vw;
+    margin-left: 0.5vw;
+    padding: 0;
+  }
+
+  #colRadioButtons {
     font-size: 1vw;
+    font-weight: 800;
+  }
+
+  #inputHowBehaved {
+    width: 4vw;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .inputPleaseBringMe {
+    margin-top: -1vw;
+    width: 100%;
+  }
+
+  .rowNice {
+    h4 {
+      font-weight: 900;
+      font-size: 1.3vw;
+      margin-bottom: 1vw;
+      text-align: center;
+      padding-top: 0.2vw;
+    }
+  }
+
+  #santsGonnaBePleased {
+    color: red;
+    font-size: 1.3vw;
+    margin-top: 1vw;
+    padding-left: 2vw;
+  }
+
+  #santasGonnaLikeThis {
+    color: red;
+    font-size: 1.3vw;
+    margin-top: 1vw;
+    padding-left: 2vw;
+  }
+
+  #imgVectorSantaBaking {
+    width: 5vw;
+    margin: 0.2vw;
+    border: 0.2vw solid black;
+    padding: 0.2vw;
   }
 `;
 
@@ -111,7 +189,7 @@ const onSubmit = async values => {
 };
 
 function LetterToSanta() {
-  const [howBehaved, setHowBehaved] = useState("naughty");
+  const [howBehaved, setHowBehaved] = useState("nice");
   const isEnabled = howBehaved === "naughty";
   return (
     <LetterToSantaSection>
@@ -125,59 +203,129 @@ function LetterToSanta() {
 
           <p>
             My name is
-            <Input id="inputNameIs" className="inputsSantaPostcard" />,
+            <TextField id="inputNameIs" className="inputsSantaPostcard" />,
           </p>
 
           <p id="pYearsOld">
             and I am
-            <Input id="inputAgeIs" className="inputsSantaPostcard" />
+            <TextField id="inputAgeIs" className="inputsSantaPostcard" />
             years old.
           </p>
+          <Row id="rowEmail">
+            <Col xs={4}>
+              <InputLabel id="inputLabelEmail">Email Address:</InputLabel>
+            </Col>
+            <Col xs={8}>
+              <TextField
+                required
+                label="Email Required"
+                style={{ width: "100%" }}
+                id="inputEmail"
+              />
+            </Col>
+          </Row>
 
-          <p>
+          <Row id="rowHaveBeen">
             I have been
-            <Input
+            <TextField
               disabled
               defaultValue="Choose 1"
               id="inputHowBehaved"
               className="inputsSantaPostcard"
             />
-            years old.
-          </p>
-          <p id="pRadioGroupHowBehaved">
-            <InputLabel>Bad</InputLabel>
-            <Radio
-              value="naughty"
-              onChange={event => setHowBehaved(event.target.value)}
-              checked={howBehaved === "naughty"}
-            />
-            <InputLabel>Good</InputLabel>
-            <Radio
-              value="nice"
-              onChange={event => setHowBehaved(event.target.value)}
-              checked={howBehaved === "nice"}
-            />
-            <InputLabel>Very Good</InputLabel>
-            <Radio
-              value="veryNice"
-              onChange={event => setHowBehaved(event.target.value)}
-              checked={howBehaved === "veryNice"}
-            />{" "}
-            {howBehaved === "naughty" && <NaughtyChecked />}
-            {howBehaved === "nice" && <NiceChecked />}
-            {howBehaved === "veryNice" && <VeryNiceChecked />}
-          </p>
-
-          <Button
-            variant="contained"
-            disabled={isEnabled}
-            id="buttonPostcardSubmit"
-            type="submit"
-            value="Submit"
-            color="secondary"
-          >
-            Send To Santa
-          </Button>
+            this year.
+          </Row>
+          <Row id="rowRadioGroupHowBehaved">
+            <Col xs={4}>
+              <Button
+                variant="contained"
+                disabled={isEnabled}
+                id="buttonPostcardSubmit"
+                type="submit"
+                value="Submit"
+                color="secondary"
+              >
+                Send To Santa
+              </Button>
+            </Col>
+            <Col id="colRadioButtons" xs={8}>
+              Bad
+              <Radio
+                value="naughty"
+                onChange={event => setHowBehaved(event.target.value)}
+                checked={howBehaved === "naughty"}
+                className="radioButtonsBadorGood"
+              />
+              Good
+              <Radio
+                value="nice"
+                onChange={event => setHowBehaved(event.target.value)}
+                checked={howBehaved === "nice"}
+                className="radioButtonsBadorGood"
+              />
+              Very Good
+              <Radio
+                value="veryNice"
+                onChange={event => setHowBehaved(event.target.value)}
+                checked={howBehaved === "veryNice"}
+                className="radioButtonsBadorGood"
+              />
+            </Col>
+          </Row>
+          {howBehaved === "naughty" && <NaughtyChecked />}
+          {howBehaved === "nice" && (
+            <Row className="rowNice">
+              <Col xs={3} id="santasGonnaLikeThis">
+                Santa's gonna like this!
+              </Col>
+              <Col xs={6}>
+                <h4>You've Been Good!</h4>
+                <p>
+                  <TextField
+                    style={{ padding: "0", margin: "0" }}
+                    className="inputPleaseBringMe"
+                    label="What would you like?"
+                  />
+                </p>
+              </Col>
+              <Col xs={3}>
+                <img
+                  id="imgVectorSantaBaking"
+                  src={imgVectorSantaBaking}
+                  alt=""
+                />
+              </Col>
+            </Row>
+          )}
+          {howBehaved === "veryNice" && (
+            <Row className="rowNice">
+              <Col xs={3} id="santsGonnaBePleased">
+                Santa's Gonna Be Pleased!
+              </Col>
+              <Col xs={6}>
+                <h4>You've Been Good!</h4>
+                <p>
+                  <TextField
+                    style={{ padding: "0", margin: "0" }}
+                    className="inputPleaseBringMe"
+                    label="What would you like?"
+                  />
+                  <TextField
+                    style={{ padding: "0", margin: "0" }}
+                    className="inputPleaseBringMe"
+                    label="Enter a Second Gift"
+                  />
+                </p>
+              </Col>
+              <Col xs={3}>
+                <img
+                  id="imgVectorSantaBaking"
+                  src={imgVectorSantaBaking}
+                  alt=""
+                />
+              </Col>
+            </Row>
+          )}
         </section>
       </section>
     </LetterToSantaSection>

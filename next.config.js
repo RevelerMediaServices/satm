@@ -9,8 +9,7 @@ module.exports = optimizedImages(
       return {
         "/": { page: "/" },
         "/about": { page: "/about" },
-        "/contact": { page: "/contact" },
-        "/home": { page: "/home" }
+        "/contact": { page: "/contact" }
       };
     },
     assetPrefix: !debug ? "/satm/" : ""
