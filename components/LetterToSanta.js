@@ -67,6 +67,18 @@ const LetterToSantaSection = styled.section`
     margin-top: -1vw;
   }
 
+  .nameYearsOldWords {
+    font-family: "Special Elite", cursive;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 0.5vw;
+    font-variant: small-caps;
+    width: 100%;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+    margin-top: -1vw;
+  }
+
   #imgPostcardStamp {
     width: 5vw;
     position: absolute;
@@ -82,7 +94,7 @@ const LetterToSantaSection = styled.section`
     width: 8vw;
   }
 
-  #pYearsOld {
+  #divYearsOld {
     padding-right: 1vw;
     text-align: right;
   }
@@ -189,7 +201,14 @@ const onSubmit = async values => {
 };
 
 function LetterToSanta() {
-  const [howBehaved, setHowBehaved] = useState("nice");
+  // initiate variables and set initial state
+  const [name, setName] = useState("");
+  const [yearsOld, setYearsOld] = useState("");
+  const [email, setEmail] = useState("");
+  const [howBehaved, setHowBehaved] = useState("");
+  const [itemNum1, setItemNum1] = useState("");
+  const [itemNum2, setItemNum2] = useState("");
+
   const isEnabled = howBehaved === "naughty";
   return (
     <LetterToSantaSection>
@@ -198,19 +217,21 @@ function LetterToSanta() {
       <section id="satmPostCard">
         <section id="innerBorder">
           <h2>Postcard to Santa & the Mrs</h2>
-
           <img id="imgPostcardStamp" src={imgPostcardStamp} alt="" />
-
-          <p>
+          <div className="nameYearsOldWords">
             My name is
-            <TextField id="inputNameIs" className="inputsSantaPostcard" />,
-          </p>
-
-          <p id="pYearsOld">
-            and I am
-            <TextField id="inputAgeIs" className="inputsSantaPostcard" />
-            years old.
-          </p>
+            <TextField
+              id="inputNameIs"
+              className="inputsSantaPostcard"
+              onChange={event => setName(event.target.name)}
+              placeholder="enter name"
+            />
+          </div>
+          <div id="divYearsOld" className="nameYearsOldWords">
+            , and I am
+            <TextField id="inputAgeIs" className="inputsSantaPostcard" /> years
+            old.
+          </div>
           <Row id="rowEmail">
             <Col xs={4}>
               <InputLabel id="inputLabelEmail">Email Address:</InputLabel>
@@ -224,7 +245,6 @@ function LetterToSanta() {
               />
             </Col>
           </Row>
-
           <Row id="rowHaveBeen">
             I have been
             <TextField
@@ -280,13 +300,11 @@ function LetterToSanta() {
               </Col>
               <Col xs={6}>
                 <h4>You've Been Good!</h4>
-                <p>
-                  <TextField
-                    style={{ padding: "0", margin: "0" }}
-                    className="inputPleaseBringMe"
-                    label="What would you like?"
-                  />
-                </p>
+                <TextField
+                  style={{ padding: "0", margin: "0" }}
+                  className="inputPleaseBringMe"
+                  label="What would you like?"
+                />
               </Col>
               <Col xs={3}>
                 <img
@@ -304,18 +322,16 @@ function LetterToSanta() {
               </Col>
               <Col xs={6}>
                 <h4>You've Been Good!</h4>
-                <p>
-                  <TextField
-                    style={{ padding: "0", margin: "0" }}
-                    className="inputPleaseBringMe"
-                    label="What would you like?"
-                  />
-                  <TextField
-                    style={{ padding: "0", margin: "0" }}
-                    className="inputPleaseBringMe"
-                    label="Enter a Second Gift"
-                  />
-                </p>
+                <TextField
+                  style={{ padding: "0", margin: "0" }}
+                  className="inputPleaseBringMe"
+                  label="What would you like?"
+                />
+                <TextField
+                  style={{ padding: "0", margin: "0" }}
+                  className="inputPleaseBringMe"
+                  label="Enter a Second Gift"
+                />
               </Col>
               <Col xs={3}>
                 <img
