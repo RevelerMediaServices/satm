@@ -20,6 +20,7 @@ const LetterToSantaSection = styled.section`
     width: 100%;
     height: 100%;
     border: 0.2vw solid black;
+    min-height: 25vw;
   }
 
   #satmPostCard {
@@ -55,18 +56,6 @@ const LetterToSantaSection = styled.section`
     padding: 0;
   }
 
-  p {
-    font-family: "Special Elite", cursive;
-    font-size: 1.5vw;
-    text-align: left;
-    margin-left: 0.5vw;
-    font-variant: small-caps;
-    width: 100%;
-    font-weight: 800;
-    letter-spacing: 0.3vw;
-    margin-top: -1vw;
-  }
-
   .nameYearsOldWords {
     font-family: "Special Elite", cursive;
     font-size: 1.5vw;
@@ -76,7 +65,6 @@ const LetterToSantaSection = styled.section`
     width: 100%;
     font-weight: 800;
     letter-spacing: 0.3vw;
-    margin-top: -1vw;
   }
 
   #imgPostcardStamp {
@@ -87,11 +75,12 @@ const LetterToSantaSection = styled.section`
   }
 
   .inputsSantaPostcard {
-    margin: 0 0.2vw 0 0.2vw;
+    margin: -0.7vw 0.2vw 0 0.2vw;
   }
 
   #inputNameIs {
     width: 8vw;
+    text-align: center;
   }
 
   #divYearsOld {
@@ -105,14 +94,13 @@ const LetterToSantaSection = styled.section`
 
   #rowEmail {
     font-family: "Special Elite", cursive;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     text-align: left;
     margin-left: 0.5vw;
     font-variant: small-caps;
     width: 100%;
     font-weight: 800;
     letter-spacing: 0.3vw;
-    margin-top: -1.5vw;
   }
 
   #rowHaveBeen {
@@ -154,12 +142,9 @@ const LetterToSantaSection = styled.section`
   #inputHowBehaved {
     width: 4vw;
     font-size: 1vw;
-    margin: 0;
-    padding: 0;
   }
 
   .inputPleaseBringMe {
-    margin-top: -1vw;
     width: 100%;
   }
 
@@ -167,7 +152,6 @@ const LetterToSantaSection = styled.section`
     h4 {
       font-weight: 900;
       font-size: 1.3vw;
-      margin-bottom: 1vw;
       text-align: center;
       padding-top: 0.2vw;
     }
@@ -212,7 +196,7 @@ function LetterToSanta() {
   const isEnabled = howBehaved === "naughty";
   return (
     <LetterToSantaSection>
-      <h1>Contact Santa & the Mrs of West Texas</h1>
+      <h1>Contact Santa & the Mrs of West Texas </h1>
 
       <section id="satmPostCard">
         <section id="innerBorder">
@@ -223,29 +207,39 @@ function LetterToSanta() {
             <TextField
               id="inputNameIs"
               className="inputsSantaPostcard"
-              onChange={event => setName(event.target.name)}
-              placeholder="enter name"
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder="Enter Name"
             />
           </div>
           <div id="divYearsOld" className="nameYearsOldWords">
             , and I am
-            <TextField id="inputAgeIs" className="inputsSantaPostcard" /> years
-            old.
+            <TextField
+              id="inputAgeIs"
+              className="inputsSantaPostcard"
+              label="age"
+              value={yearsOld}
+              onChange={e => setYearsOld(e.target.value)}
+            />{" "}
+            years old.
           </div>
-          <Row id="rowEmail">
-            <Col xs={4}>
-              <InputLabel id="inputLabelEmail">Email Address:</InputLabel>
+          <Row className="nameYearsOldWords">
+            <Col xs={5}>
+              <span>Email Address:</span>
             </Col>
-            <Col xs={8}>
+            <Col xs={7}>
               <TextField
                 required
                 label="Email Required"
                 style={{ width: "100%" }}
                 id="inputEmail"
+                className="inputsSantaPostcard"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
               />
             </Col>
           </Row>
-          <Row id="rowHaveBeen">
+          <Row className="nameYearsOldWords">
             I have been
             <TextField
               disabled
@@ -302,8 +296,10 @@ function LetterToSanta() {
                 <h4>You've Been Good!</h4>
                 <TextField
                   style={{ padding: "0", margin: "0" }}
-                  className="inputPleaseBringMe"
+                  className="inputPleaseBringMe inputsSantaPostcard"
                   label="What would you like?"
+                  value={itemNum1}
+                  onChange={e => setItemNum1(e.target.value)}
                 />
               </Col>
               <Col xs={3}>
@@ -324,13 +320,17 @@ function LetterToSanta() {
                 <h4>You've Been Good!</h4>
                 <TextField
                   style={{ padding: "0", margin: "0" }}
-                  className="inputPleaseBringMe"
+                  className="inputPleaseBringMe inputsSantaPostcard"
                   label="What would you like?"
+                  value={itemNum1}
+                  onChange={e => setItemNum1(e.target.value)}
                 />
                 <TextField
                   style={{ padding: "0", margin: "0" }}
-                  className="inputPleaseBringMe"
+                  className="inputPleaseBringMe inputsSantaPostcard"
                   label="Enter a Second Gift"
+                  value={itemNum2}
+                  onChange={e => setItemNum2(e.target.value)}
                 />
               </Col>
               <Col xs={3}>
