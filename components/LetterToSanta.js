@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 import styled from "styled-components";
 
@@ -10,6 +10,8 @@ import Input from "@material-ui/core/Input";
 import Radio from "@material-ui/core/Radio";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+
+import { db } from "../Firebase";
 
 import { Row, Col } from "reactstrap";
 
@@ -56,7 +58,7 @@ const LetterToSantaSection = styled.section`
     padding: 0;
   }
 
-  .nameYearsOldWords {
+  .nameAgeWords {
     font-family: "Special Elite", cursive;
     font-size: 1.5vw;
     text-align: left;
@@ -83,7 +85,7 @@ const LetterToSantaSection = styled.section`
     text-align: center;
   }
 
-  #divYearsOld {
+  #divAge {
     padding-right: 1vw;
     text-align: right;
   }
@@ -148,7 +150,7 @@ const LetterToSantaSection = styled.section`
     width: 100%;
   }
 
-  .rowNice {
+  .rowGood {
     h4 {
       font-weight: 900;
       font-size: 1.3vw;
@@ -179,171 +181,188 @@ const LetterToSantaSection = styled.section`
   }
 `;
 
-const onSubmit = async values => {
-  await sleep(300);
-  window.alert(JSON.stringify(values, 0, 2));
-};
-
 function LetterToSanta() {
   // initiate variables and set initial state
   const [name, setName] = useState("");
-  const [yearsOld, setYearsOld] = useState("");
+  const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
   const [howBehaved, setHowBehaved] = useState("");
   const [itemNum1, setItemNum1] = useState("");
   const [itemNum2, setItemNum2] = useState("");
 
-  const isEnabled = howBehaved === "naughty";
+  const isEnabled = howBehaved === "bad";
+
+  const onSubmit = useCallback(e => {
+    const newFormRef = db.ref("ContactForms");
+    const form = {
+      name,
+      age,
+      email,
+      howBehaved,
+      itemNum1,
+      itemNum2
+    };
+    newFormRef.push(form);
+    setName("");
+    setAge("");
+    setEmail("");
+    setHowBehaved("");
+    setItemNum1("");
+    setItemNum2("");
+  });
+
   return (
     <LetterToSantaSection>
       <h1>Contact Santa & the Mrs of West Texas </h1>
-
-      <section id="satmPostCard">
-        <section id="innerBorder">
-          <h2>Postcard to Santa & the Mrs</h2>
-          <img id="imgPostcardStamp" src={imgPostcardStamp} alt="" />
-          <div className="nameYearsOldWords">
-            My name is
-            <TextField
-              id="inputNameIs"
-              className="inputsSantaPostcard"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              placeholder="Enter Name"
-            />
-          </div>
-          <div id="divYearsOld" className="nameYearsOldWords">
-            , and I am
-            <TextField
-              id="inputAgeIs"
-              className="inputsSantaPostcard"
-              label="age"
-              value={yearsOld}
-              onChange={e => setYearsOld(e.target.value)}
-            />{" "}
-            years old.
-          </div>
-          <Row className="nameYearsOldWords">
-            <Col xs={5}>
-              <span>Email Address:</span>
-            </Col>
-            <Col xs={7}>
+      <form onSubmit={onSubmit}>
+        <section id="satmPostCard">
+          <section id="innerBorder">
+            <h2>Postcard to Santa & the Mrs</h2>
+            <img id="imgPostcardStamp" src={imgPostcardStamp} alt="" />
+            <div className="nameAgeWords">
+              My name is
               <TextField
-                required
-                label="Email Required"
-                style={{ width: "100%" }}
-                id="inputEmail"
+                id="inputNameIs"
                 className="inputsSantaPostcard"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
+                value={name}
+                onChange={e => setName(e.target.value)}
+                placeholder="Enter Name"
               />
-            </Col>
-          </Row>
-          <Row className="nameYearsOldWords">
-            I have been
-            <TextField
-              disabled
-              defaultValue="Choose 1"
-              id="inputHowBehaved"
-              className="inputsSantaPostcard"
-            />
-            this year.
-          </Row>
-          <Row id="rowRadioGroupHowBehaved">
-            <Col xs={4}>
-              <Button
-                variant="contained"
-                disabled={isEnabled}
-                id="buttonPostcardSubmit"
-                type="submit"
-                value="Submit"
-                color="secondary"
-              >
-                Send To Santa
-              </Button>
-            </Col>
-            <Col id="colRadioButtons" xs={8}>
-              Bad
-              <Radio
-                value="naughty"
-                onChange={event => setHowBehaved(event.target.value)}
-                checked={howBehaved === "naughty"}
-                className="radioButtonsBadorGood"
-              />
-              Good
-              <Radio
-                value="nice"
-                onChange={event => setHowBehaved(event.target.value)}
-                checked={howBehaved === "nice"}
-                className="radioButtonsBadorGood"
-              />
-              Very Good
-              <Radio
-                value="veryNice"
-                onChange={event => setHowBehaved(event.target.value)}
-                checked={howBehaved === "veryNice"}
-                className="radioButtonsBadorGood"
-              />
-            </Col>
-          </Row>
-          {howBehaved === "naughty" && <NaughtyChecked />}
-          {howBehaved === "nice" && (
-            <Row className="rowNice">
-              <Col xs={3} id="santasGonnaLikeThis">
-                Santa's gonna like this!
+            </div>
+            <div id="divAge" className="nameAgeWords">
+              , and I am
+              <TextField
+                id="inputAgeIs"
+                className="inputsSantaPostcard"
+                label="Age"
+                value={age}
+                onChange={e => setAge(e.target.value)}
+              />{" "}
+              years old.
+            </div>
+            <Row className="nameAgeWords">
+              <Col xs={5}>
+                <span>Email Address:</span>
               </Col>
-              <Col xs={6}>
-                <h4>You've Been Good!</h4>
+              <Col xs={7}>
                 <TextField
-                  style={{ padding: "0", margin: "0" }}
-                  className="inputPleaseBringMe inputsSantaPostcard"
-                  label="What would you like?"
-                  value={itemNum1}
-                  onChange={e => setItemNum1(e.target.value)}
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  id="imgVectorSantaBaking"
-                  src={imgVectorSantaBaking}
-                  alt=""
+                  required
+                  label="Email Required"
+                  style={{ width: "100%" }}
+                  id="inputEmail"
+                  className="inputsSantaPostcard"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  type="email"
                 />
               </Col>
             </Row>
-          )}
-          {howBehaved === "veryNice" && (
-            <Row className="rowNice">
-              <Col xs={3} id="santsGonnaBePleased">
-                Santa's Gonna Be Pleased!
+            <Row className="nameAgeWords">
+              I have been
+              <TextField
+                disabled
+                defaultValue="Choose 1"
+                id="inputHowBehaved"
+                className="inputsSantaPostcard"
+              />
+              this year.
+            </Row>
+            <Row id="rowRadioGroupHowBehaved">
+              <Col xs={4}>
+                <Button
+                  variant="contained"
+                  disabled={isEnabled}
+                  id="buttonPostcardSubmit"
+                  value="Submit"
+                  color="secondary"
+                  type="submit"
+                >
+                  Send To Santa
+                </Button>
               </Col>
-              <Col xs={6}>
-                <h4>You've Been Good!</h4>
-                <TextField
-                  style={{ padding: "0", margin: "0" }}
-                  className="inputPleaseBringMe inputsSantaPostcard"
-                  label="What would you like?"
-                  value={itemNum1}
-                  onChange={e => setItemNum1(e.target.value)}
+              <Col id="colRadioButtons" xs={8}>
+                Bad
+                <Radio
+                  value="bad"
+                  onChange={event => setHowBehaved(event.target.value)}
+                  checked={howBehaved === "bad"}
+                  className="radioButtonsBadorGood"
                 />
-                <TextField
-                  style={{ padding: "0", margin: "0" }}
-                  className="inputPleaseBringMe inputsSantaPostcard"
-                  label="Enter a Second Gift"
-                  value={itemNum2}
-                  onChange={e => setItemNum2(e.target.value)}
+                Good
+                <Radio
+                  value="good"
+                  onChange={event => setHowBehaved(event.target.value)}
+                  checked={howBehaved === "good"}
+                  className="radioButtonsBadorGood"
                 />
-              </Col>
-              <Col xs={3}>
-                <img
-                  id="imgVectorSantaBaking"
-                  src={imgVectorSantaBaking}
-                  alt=""
+                Very Good
+                <Radio
+                  value="veryGood"
+                  onChange={event => setHowBehaved(event.target.value)}
+                  checked={howBehaved === "veryGood"}
+                  className="radioButtonsBadorGood"
                 />
               </Col>
             </Row>
-          )}
+            {howBehaved === "bad" && <NaughtyChecked />}
+            {howBehaved === "good" && (
+              <Row className="rowGood">
+                <Col xs={3} id="santasGonnaLikeThis">
+                  Santa's gonna like this!
+                </Col>
+                <Col xs={6}>
+                  <h4>You've Been Good!</h4>
+                  <TextField
+                    style={{ padding: "0", margin: "0" }}
+                    className="inputPleaseBringMe inputsSantaPostcard"
+                    label="What would you like?"
+                    value={itemNum1}
+                    onChange={e => setItemNum1(e.target.value)}
+                  />
+                </Col>
+                <Col xs={3}>
+                  <img
+                    id="imgVectorSantaBaking"
+                    src={imgVectorSantaBaking}
+                    alt=""
+                  />
+                </Col>
+              </Row>
+            )}
+            {howBehaved === "veryGood" && (
+              <Row className="rowGood">
+                <Col xs={3} id="santsGonnaBePleased">
+                  Santa's Gonna Be Pleased!
+                </Col>
+                <Col xs={6}>
+                  <h4>You've Been Good!</h4>
+                  <TextField
+                    style={{ padding: "0", margin: "0" }}
+                    className="inputPleaseBringMe inputsSantaPostcard"
+                    label="What would you like?"
+                    value={itemNum1}
+                    onChange={e => setItemNum1(e.target.value)}
+                  />
+                  <TextField
+                    style={{ padding: "0", margin: "0" }}
+                    className="inputPleaseBringMe inputsSantaPostcard"
+                    label="Enter a Second Gift"
+                    value={itemNum2}
+                    onChange={e => setItemNum2(e.target.value)}
+                  />
+                </Col>
+                <Col xs={3}>
+                  <img
+                    id="imgVectorSantaBaking"
+                    src={imgVectorSantaBaking}
+                    alt="Baking Santa"
+                  />
+                </Col>
+              </Row>
+            )}
+          </section>
         </section>
-      </section>
+      </form>
     </LetterToSantaSection>
   );
 }
